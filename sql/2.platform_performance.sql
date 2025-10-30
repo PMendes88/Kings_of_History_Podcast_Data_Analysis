@@ -37,8 +37,8 @@ SELECT
 FROM
     platform_downloads
 WHERE
-    downloads < 500
--- Platforms with less than 500 downloads include google podcasts, pocket casts, and others, indicating potential areas for growth or targeted marketing efforts.
+    downloads < 900
+-- Platforms with less than 900 downloads include google podcasts, pocket casts, and others, indicating potential areas for growth or targeted marketing efforts.
 -- Platforms such as Overcast, Castro, Castbox, Goodpods, and TrueFans are automatically available via Apple Podcasts, which may explain their lower individual download numbers.
 
 
@@ -55,7 +55,7 @@ SELECT
     2) AS cumulative_percentage
 FROM platform_downloads
 ORDER BY downloads DESC;
--- The top three platforms (Spotify, Apple Podcasts, and our website) account for approximately 91.12% of total downloads, indicating a strong concentration of audience on these platforms.
+-- The top three platforms (Spotify, Apple Podcasts, and our website) account for approximately 91.11% of total downloads, indicating a strong concentration of audience on these platforms.
 -- This suggests that focusing marketing and content strategies on these top platforms could be beneficial for maximizing reach and engagement.
 
 
@@ -76,5 +76,6 @@ SELECT *
 FROM cte
 WHERE cumulative_percentage <= 80
 ORDER BY downloads DESC;
--- Platforms contributing to 80% of total downloads include Spotify and Apple Podcasts.
+-- Spotify alone contributes to over 73.78% of total downloads, and when combined with Apple Podcasts (13.64%) puts us well over the 80% threshold.
+-- This highlights the dominance of these platforms in our overall download metrics and suggests that they are critical for our distribution strategy.
 

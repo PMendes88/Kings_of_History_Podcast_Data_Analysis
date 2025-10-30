@@ -13,8 +13,8 @@ ORDER BY
     all_time_downloads DESC
 LIMIT 5;
 /* Our first 5 episodes in portuguese are the most downloaded ones.
-This is not only because they are the first ones, but also because 
-they are in portuguese which is the language of our main audience.
+This is not only because they are the first ones, but also because our narrative is chronological, 
+therefore our viewers, will tend to start from the beginning.
 
 We can also see that the number of downloads drops significantly after the first 5 episodes.
 This is related to the retention rate of our podcast.
@@ -58,6 +58,7 @@ SELECT
     episode_index,
     episode_title,
     downloads_last_7d,
+    downloads_prev_23d,
     downloads_last_30d,
     growth_ratio,
     growth_rank,
@@ -80,8 +81,8 @@ The last 10 episodes have growth_ratio 0 which means that there are no downloads
 These episodes have essentially flattened.
 
 Trending episodes are not always the highest total downloads as we can see from our very first episode
-"Portugal - D. Afonso I - Parte 1" which has the highest 7d and 30d downloads later in the list, but growth_ratio 
-is low (0.16).
+"Portugal - D. Afonso I - Parte 1" which has the highest all time downloads and one of the highest 30d downloads 
+later in the list (ranked in 36), but growth_ratio is low (0.16).
 This shows that momentum and popularity are distinct metrics.
 
 Multiple episodes can tie in growth rank which indicates similar growth patterns.
@@ -144,7 +145,7 @@ nearly a fifth of total listens.
 This is a classic Pareto distribution: a few hits get the most attention, but many episodes accumulate the remaining 80% 
 of downloads.
 
-The Afonso I and Sancho II story arcs dominate the full range of the table.
+The Afonso I and Sancho II story arcs dominate the top range of the table.
 The fact that the Sancho II story arc has 3 episodes in the top 20% indicates a strong engagement. This can be due to
 the fact that Sancho II is the king which there is the least known information, so listeners are more curious about this period.
 

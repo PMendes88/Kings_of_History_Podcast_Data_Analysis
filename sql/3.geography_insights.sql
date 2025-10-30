@@ -13,10 +13,10 @@ GROUP BY
 ORDER BY
     total_downloads DESC
 LIMIT 10;
-/* The top countries by number of downloads are the United States, United Kingdom, Canada, 
-Australia, and Germany, indicating a strong presence in English-speaking countries.
-Although it must be said that the countries with the highest number of portuguese immigrants 
-are also in the top 10, such as the UK, France, Switzerland, Germany, Spain, Luxembourg, Brazil and the US.*/
+/* The top countries by number of downloads are Portugal, United Kingdom, Brazil, Spain, Germany, US, 
+Denmark, Luxembourg, France and Switzerland with a disproportionate presence in Portugal which is to be expected. 
+Many of the other countries with a high count of downloads also have the highest number of portuguese immigrants, 
+such as the UK, France, Switzerland, Germany, Spain, Luxembourg, Brazil and the US.*/
 
 
 -- Top continents by number of downloads
