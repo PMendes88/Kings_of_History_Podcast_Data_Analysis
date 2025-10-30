@@ -2,7 +2,7 @@
 A data analysis project personal to me on several different levels. As the creator, director and one of the writers for the Kings of History Podcast, and a data analyst in the making, I gathered data available related to my podcast and dived deep into it using SQL as the heavy lifter and Power B.I. to do the pretty.
 
 # Overview
-Waht is presented here is an end-to-end analysis with data gathered from the last 90 days of the Kings of History podcast, this podcast is a project that I've been working on for about a year and a half now with three friends of mine where we present to a broader audience the portuguese king's biographies in an educational and not too heavy style.
+What is presented here is an end-to-end analysis with data gathered from the last 90 days of the Kings of History podcast, this podcast is a project that I've been working on for about a year and a half now with three friends of mine where we present to a broader audience the portuguese king's biographies in an educational and not too heavy style.
 With the data that was provided from buzzsprout, our publisher, I managed to dive deep into the analytics of the show using SQL in PostgreSQL via VSCode to do all the queries that allowed me to gather insights on the performance, geography and trends currently affecting our many episodes.
 There are three main categories that were studied:
   - Platform insights
